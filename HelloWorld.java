@@ -16,6 +16,7 @@ public class calculatrice{
         return a*b;
     }
     public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
         calculatrice cal=new calculatrice();
         System.out.println("donner le premier entier");
         double a=scanner.nextInt();
