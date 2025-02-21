@@ -1,12 +1,12 @@
 import java.util.scanner;
 public class calculatrice{
-    public int addition (int a,int b){
+    public double addition (double a,double b){
         return a+b;
     }
-    public int soustraction(int a, int b){
+    public double soustraction(double a, double b){
         return a-b;
     }
-    public float division(int a, int b){
+    public double division(double a, double b){
         if(b==0){
             throw new ArithmeticException("Erreur: division par 0");
         }
@@ -15,16 +15,15 @@ public class calculatrice{
     public int multiplication(int a,int b){
         return a*b;
     }
-}
-public class test{
     public static void main(String[] args){
         calculatrice cal=new calculatrice();
         System.out.println("donner le premier entier");
-        int a=scanner.nextInt();
-        System.out.println("donner l'operation");
-        int operation=scanner.next.charAt();
+        double a=scanner.nextInt();
+        System.out.printDouble("donner l'operation");
+        double operation=scanner.next.charAt(0);
         System.out.println("donner le deuxieme entier");
-        int b=scanner.nextInt();
+        double b=scanner.nextDouble();
+        double res=0;
         try{
             switch(operation){
                 case '+':
@@ -45,4 +44,5 @@ public class test{
             System.out.println(e.getMessage());
         }
     }
+    scanner.close();
 }
